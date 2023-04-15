@@ -1,7 +1,5 @@
 package org.example;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Scanner;
 
 public class Payout {
@@ -16,7 +14,7 @@ public class Payout {
                     "\n 3.200" +
                     "\n 3.500" +
                     "\n 4.Inna kwota" +
-                    "\n 0. Powrót do menu");
+                    "\n 0.Powrót do menu");
             int number = scanner.nextInt();
             switch (number) {
                 case 1:

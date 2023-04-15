@@ -2,24 +2,21 @@ package org.example;
 
 public class Balance {
 
-    float balance = 10000f;
+    public static float balance = 10000.00f;
 
-//    public Balance(float balance) {
-//        balance = 10000f;
-//    }
     public void subtract(float value) {
         balance -= value;
+        setBalance(balance);
     }
 
     public void add(float value) {
         balance += value;
+        setBalance(balance);
     }
 
     @Override
     public String toString() {
-        return "Balance{" +
-                "balance=" + balance +
-                '}';
+        return balance + " PLN";
     }
 
     public float getBalance() {
